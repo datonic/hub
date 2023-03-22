@@ -1,0 +1,9 @@
+name: dataset-template
+title: Template for Core Datasets
+resources:
+  - name: local-data
+    type: table
+    path: data/table.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
