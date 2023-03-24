@@ -1,9 +1,9 @@
-name: dataset-template
+name: co2-dataset-template
 title: Template for Core Datasets
 resources:
-  - name: local-data
+  - name: co2-mm-gl
     type: table
-    path: data/table.csv
+    path: data/co2_mm_gl.csv
     scheme: file
     format: csv
     mediatype: text/csv

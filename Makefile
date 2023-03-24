@@ -4,4 +4,4 @@ build:
 	docker build -t datasets/data-package .
 
 data: build
-	docker run -v $(PWD):/data datasets/data-package
+	docker run -it -v $(PWD):/app datasets/data-package

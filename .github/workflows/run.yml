@@ -1,0 +1,23 @@
+name: Download Latest Dataset
+
+on:
+  schedule:
+    - cron: "0 9 * * *"
+
+jobs:
+  download-dataset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v3
+      - name: Build Docker Image
+        run: make build
+      - name: Download CSV
+        run: make data
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Update data"
+          git push
