@@ -1,10 +1,14 @@
+IMAGE_NAME = davidgasquez/core-dataset-package
+
+.PHONY: build data push
+
 all: data
 
 build:
-	docker build -t davidgasquez/data-package-template .
+	docker build -t $(IMAGE_NAME) .
 
 data: build
-	docker run -v $(PWD):/app davidgasquez/data-package-template
+	docker run --rm -v $(PWD):/app $(IMAGE_NAME)
 
 push: build
-	docker push davidgasquez/data-package-template
+	docker push $(IMAGE_NAME)
