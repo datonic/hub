@@ -1,4 +1,4 @@
-name: Download Latest Dataset
+name: Scrape
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     - cron: "0 9 * * *"
 
 jobs:
-  download-dataset:
+  scrape:
     runs-on: ubuntu-latest
     steps:
       - name: Check Out
