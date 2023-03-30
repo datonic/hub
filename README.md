@@ -2,7 +2,7 @@
 
 > An idealistic implementation of [my Open Data dreams](https://publish.obsidian.md/davidgasquez/Open+Data).
 
-[![Scrape](https://github.com/davidgasquez/packaging-open-data/actions/workflows/run.yml/badge.svg?branch=main)](https://github.com/davidgasquez/packaging-open-data/actions/workflows/run.yml)
+[![Scrape](https://github.com/davidgasquez/packaging-open-data/actions/workflows/run.yml/badge.svg)](https://github.com/davidgasquez/packaging-open-data/actions/workflows/run.yml)
 
 Say you discover an interesting open dataset online and you want to use it in your project. You could download the dataset, process it, and then upload it to your GitHub/database/S3 bucket/...
 
