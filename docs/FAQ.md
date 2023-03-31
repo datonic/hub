@@ -72,3 +72,11 @@ Yes, the new LLM models could help with this vision. A few things that could be 
 
 - Extract data and generate resources from anything. Define the schema and let GPT-N do the rest. [Some projects are already working on this](https://jamesturk.github.io/scrapeghost/).
 - Can datapackages be written in natural language? Can we use GPT-N to generate them? The same way [plugins are starting to be written for ChatGPT](https://raw.githubusercontent.com/openai/chatgpt-retrieval-plugin/336ff64b96ef23bda164ab94ca6f349607bbc5b6/.well-known/ai-plugin.json) that only requires a `description_for_model` text. Could something like this work on data packages. Embeddings become the flexible metadata we all want.
+
+### How does Frictionless Data compare to other data management or data packaging tools?
+
+TODO: Explain how the project fits into the larger open data ecosystem and how it relates to other similar projects.
+
+### Can Frictionless be used for non-tabular data formats?
+
+TODO: Explain how the project can be used for non-tabular data formats and add examples.
