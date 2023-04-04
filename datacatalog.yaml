@@ -1,5 +1,0 @@
-datasets:
-  - name: co2
-    package: datapackage.yaml
-  - name: oil
-    package: https://raw.githubusercontent.com/datasets/oil-prices/main/datapackage.json
