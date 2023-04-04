@@ -31,8 +31,7 @@ We need to solve the problem of "packaging data" as a community. Frictionless is
 
 ## 🧩 Features
 
+- [FAIR](https://www.go-fair.org/fair-principles/).
 - Minimal and flexible setup. Work using a minimal Python script or a fully fledged development environment on with GitHub Codespaces.
 - Preconfigured GitHub Actions to keep datasets valid and up to date.
-
-
-TODO: Document any key design decisions and trade-offs of this approach.
+- Zero vendor lock-in. Backend and format agnostic. Use any tool you want to create, explore, and consume the datasets.

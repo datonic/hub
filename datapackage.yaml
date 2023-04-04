@@ -1,13 +1,8 @@
-name: co2-dataset-template
-title: Template for Core Datasets
+name: co2
+title: Atmospheric Carbon Dioxide Data
 resources:
-  - name: co2-mm-gl
-    type: table
+  - name: co2_mm_gl
     path: data/co2_mm_gl.csv
-    scheme: file
-    format: csv
-    profile: tabular-data-resource
-    mediatype: text/csv
     dialect:
       headerRows:
         - 56
