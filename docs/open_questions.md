@@ -4,3 +4,4 @@
     - Query data at runtime with [Trustfall](https://github.com/obi1kenobi/trustfall)
 - How to deal with very large datasets?
 - How can it handle formats like Delta/Hive Partitioned datasets?
+- How to integrate with modern tooling like dbt (e.g. Datadex)?

@@ -12,6 +12,7 @@ Align the way we package data as an ecosystem.
 - [ ] Create a Catalog of existing datasets
 - [ ] Make datasets retrievable via gateways
 - [ ] Make datasets retrievable via IPFS with `fsspec`
+- [ ] Early community reach out to look for potential datasets to package and collaborate on
 
 ### 0.2
 
@@ -22,4 +23,4 @@ Align the way we package data as an ecosystem.
 
 ### 0.3
 
-- [ ] Design incentives for a Data Coop or DataDAO
+- [ ] Design incentives for a Data Coop or DataDAO. Bounties, token gated datasets, etc.
