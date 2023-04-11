@@ -14,6 +14,9 @@ This repository explores how that could be done using [Frictionless](https://fri
 
 This could eventually become a template with best practices to manage humanity's [core datasets](https://datahub.io/collections).
 
+> **Note**
+> 👉 Check out the [Quickstart Notebook](notebooks/quickstart.ipynb) to see how everything fits together.
+
 ## 🛣️ Why Frictionless?
 
 [Frictionless standards](https://specs.frictionlessdata.io/) provide a lightweight and minimal abstraction layer (data packages are JSON/YAML files) on top of data files to make them easier to use. Adhering to the Frictionless specs makes it easier to integrate into the existing community and interoperate with all the datasets and tools already built.
