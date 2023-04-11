@@ -8,11 +8,9 @@ I've [tried quite a bunch of Data Package Managers](https://publish.obsidian.md/
 
 That said, I'm open to other options. If you have a better idea, please open an issue and let's chat!
 
-### How would you backup datasets?
+### How would you make datasets immutable?
 
-An easy and cheap way to backup datasets is to preiodically backup the data resources on IPFS/Filecoin. This can be done using GitHub Actions and [Estuary](https://estuary.tech/)/[web3.storage](https://web3.storage/). Once the data in there, we can rely on the [`_cache` property of the Frictionless Specs](https://specs.frictionlessdata.io/patterns/#caching-of-resources) (or a `_backup` one) to point to the IPFS CID.
-
-Datasets could be also IPFS native. Clients could either fetch the data via IPFS or use a public Gateway.
+Datasets could be IPFS native. Clients could either fetch the data via IPFS or use a public Gateway.
 
 ```yaml
 name: my-dataset
@@ -26,7 +24,7 @@ resources:
 In the end, the Frictionless abstraction is just a URL. We can use anything we want in the backend as long as we provide a way to read the data. In this case:
 
 ```python
-ipfs_package = Package("my-dataset-datapackage.yaml") # Could even be Package("bafy...")
+ipfs_package = Package("my-dataset-datapackage.yaml") # Could even be Package("bafyreca4sf...")
 ipfs_resource = ipfs_package.get_resource("my-data")
 
 # Enjoy!
@@ -34,6 +32,10 @@ ipfs_resource = ipfs_package.get_resource("my-data")
 ipfs_resource.to_pandas()
 ipfs_resource.sql("SELECT * FROM my-data")
 ```
+
+### How would you backup datasets?
+
+An easy and cheap way to backup datasets is to preiodically backup the data resources on IPFS/Filecoin. This can be done using GitHub Actions and [Estuary](https://estuary.tech/)/[web3.storage](https://web3.storage/). Once the data in there, we can rely on the [`_cache` property of the Frictionless Specs](https://specs.frictionlessdata.io/patterns/#caching-of-resources) (or a `_backup` one) to point to the IPFS CID.
 
 ### How would you make datasets discoverable?
 
