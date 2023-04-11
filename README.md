@@ -15,7 +15,7 @@ This repository explores how that could be done using [Frictionless](https://fri
 This could eventually become a template with best practices to manage humanity's [core datasets](https://datahub.io/collections).
 
 > **Note**
-> 👉 Check out the [Quickstart Notebook](notebooks/quickstart.ipynb) to see how everything fits together.
+> Check out the [Quickstart Notebook](notebooks/quickstart.ipynb) to see how everything fits together. 🔥
 
 ## 🛣️ Why Frictionless?
 
