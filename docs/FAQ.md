@@ -12,6 +12,29 @@ That said, I'm open to other options. If you have a better idea, please open an 
 
 An easy and cheap way to backup datasets is to preiodically backup the data resources on IPFS/Filecoin. This can be done using GitHub Actions and [Estuary](https://estuary.tech/)/[web3.storage](https://web3.storage/). Once the data in there, we can rely on the [`_cache` property of the Frictionless Specs](https://specs.frictionlessdata.io/patterns/#caching-of-resources) (or a `_backup` one) to point to the IPFS CID.
 
+Datasets could be also IPFS native. Clients could either fetch the data via IPFS or use a public Gateway.
+
+```yaml
+name: my-dataset
+resources:
+  - name: my-data
+    type: table
+    path: bafkreidgvpkjawlxz6sffxzwgooowe5yt7i6wsyg236mfoks77nywkptdq
+    scheme: ipfs
+```
+
+In the end, the Frictionless abstraction is just a URL. We can use anything we want in the backend as long as we provide a way to read the data. In this case:
+
+```python
+ipfs_package = Package("my-dataset-datapackage.yaml") # Could even be Package("bafy...")
+ipfs_resource = ipfs_package.get_resource("my-data")
+
+# Enjoy!
+
+ipfs_resource.to_pandas()
+ipfs_resource.sql("SELECT * FROM my-data")
+```
+
 ### How would you make datasets discoverable?
 
 This is something we have to do as a community. A great start is to create [Catalogs](https://framework.frictionlessdata.io/docs/framework/catalog.html). Storing the Catalog definitions in places like GitHub will make it easy to discover them and surface the best ones. At the end, a data package is only an URL!
