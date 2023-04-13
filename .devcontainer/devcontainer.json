@@ -1,5 +1,5 @@
 {
-    "name": "Core Dataset",
+    "name": "Datasets",
     "build": {
         "dockerfile": "../Dockerfile",
         "context": ".."

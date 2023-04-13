@@ -2,6 +2,16 @@
 
 Please open an issue if you have any other question!
 
+## Why Frictionless?
+
+[Frictionless standards](https://specs.frictionlessdata.io/) provide a lightweight and minimal abstraction layer (data packages are JSON/YAML files) on top of data files to make them easier to use. Adhering to the Frictionless specs makes it easier to integrate into the existing community and interoperate with all the datasets and tools already built.
+
+Another interesting [side effect of the Frictionless design fisolophy](https://specs.frictionlessdata.io/#design-philosophy) is that it allows everyone to package datasets in a permissionless way. You don't need to move the data, just wrap it around with a simple metadata file.
+
+It's already being used by organizations like [Our World in Data](https://github.com/search?q=repo%3Aowid%2Fowid-datasets%20datapackage.json&type=code), cooperatives like [Catalyst](https://github.com/search?q=org%3Acatalyst-cooperative%20datapackage&type=code), and [many other places](https://frictionlessdata.io/adoption/).
+
+We need to solve the problem of "packaging data" as a community. Frictionless is a great starting point as it only takes someone to [write a plugin/extension](https://framework.frictionlessdata.io/docs/advanced/extending.html) to integrate a new platform/format/scheme/portal into the ecosystem.
+
 ### Why don't you use X instead?
 
 I've [tried quite a bunch of Data Package Managers](https://publish.obsidian.md/davidgasquez/Open+Data#Data+Package+Managers). Frictionless is the simplest and most flexible one. It also has a reasonable adoption and active community.
