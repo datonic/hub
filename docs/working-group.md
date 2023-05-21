@@ -22,3 +22,4 @@ Check out the [Quickstart Notebook](../notebooks/quickstart.ipynb) to see how to
 - Zero vendor lock-in.
   - Backend and format agnostic.
   - Use any tool you want to create, explore, and consume the datasets.
+- Distributed and permissionless ecosystem.
