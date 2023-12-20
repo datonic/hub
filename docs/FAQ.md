@@ -116,11 +116,9 @@ TODO: Explain how the project fits into the larger open data ecosystem and how i
 
 TODO: Explain how the project can be used for non-tabular data formats and add examples.
 
-
 ### Why should people use Frictionless Data?
 
 TODO: Explain why people should use the project. Coldstart problem, incentives, etc.
-
 
 ### What is the revenue model for the project?
 

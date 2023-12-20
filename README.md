@@ -11,15 +11,13 @@ The center of the Datonic community. We aim to improve the way the world produce
 ## 🌟 Principles
 
 - [FAIR](https://www.go-fair.org/fair-principles/).
-- Simple, minimal, and flexible setup.
-  - Work using a minimal Python script or a fully fledged development environment on with GitHub Codespaces.
-  - Unix philosophy: do one thing and do it well.
-- Zero vendor lock-in.
-  - Backend and format agnostic.
-  - Use any tool you want to create, explore, and consume the datasets.
+- Minimal and flexible. Rely on tools that do one thing and do it well.
+- No vendor lock-in.
+  - Rely on Open code, standards, and infrastructure..
+  - Use the tool you want to create, explore, and consume the datasets.
 - Distributed and permissionless ecosystem.
 - Modular ecosystem. Rely on standards like Arrow for IPC, and Frictionless for metadata.
-- Permissionless collaboration. Everything open source and ready to be forked and improved.
+- Permissionless collaboration. Open source code and make it ready to be improved.
 - Declarative and reproducible workflows and datasets. Everything as code.
 - Open and transparent governance and funding.
 - Embrace inmutability and idempotency. Rely on content-addressable storage and append-only logs.
