@@ -13,11 +13,10 @@ The center of the Datonic community. We aim to improve the way the world produce
 - [FAIR](https://www.go-fair.org/fair-principles/).
 - Minimal and flexible. Rely on tools that do one thing and do it well.
 - No vendor lock-in.
-  - Rely on Open code, standards, and infrastructure..
+  - Rely on Open code, standards, and infrastructure.
   - Use the tool you want to create, explore, and consume the datasets.
-- Distributed and permissionless ecosystem.
 - Modular ecosystem. Rely on standards like Arrow for IPC, and Frictionless for metadata.
-- Permissionless collaboration. Open source code and make it ready to be improved.
+- Distributed Permissionless ecosystem and collaboration. Open source code and make it ready to be improved.
 - Declarative and reproducible workflows and datasets. Everything as code.
 - Open and transparent governance and funding.
 - Embrace inmutability and idempotency. Rely on content-addressable storage and append-only logs.
