@@ -22,6 +22,7 @@ We aim for a world that produces **open data** with **open source software** usi
 - Distributed Permissionless ecosystem and collaboration. Open source code and make it ready to be improved.
 - Declarative and reproducible workflows and datasets. Everything as code.
 - Open and transparent governance and funding.
+- Community that incentives contributors.
 - Embrace inmutability and idempotency. Rely on content-addressable storage and append-only logs.
 - Aim for stateless and serverless deployments. E.g. use GitHub Pages, host datasets on S3.
 - Offline-first. Rely on static files and offline-first tools like [Datasette](https://datasette.io/). 
