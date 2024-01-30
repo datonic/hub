@@ -24,5 +24,5 @@ We aim for a world that produces **open data** with **open source software** usi
 - Open and transparent governance and funding.
 - Community that incentives contributors.
 - Embrace inmutability and idempotency. Rely on content-addressable storage and append-only logs.
-- Aim for stateless and serverless deployments. E.g. use GitHub Pages, host datasets on S3.
+- Aim for stateless and serverless deployments. E.g. use GitHub Pages, host datasets on S3. No servers to maintain, no databases to manage, no infrastructure to worry about.
 - Offline-first. Rely on static files and offline-first tools like [Datasette](https://datasette.io/). 
