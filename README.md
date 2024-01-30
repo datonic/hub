@@ -17,9 +17,11 @@ We aim for a world that produces **open data** with **open source software** usi
 - Minimal and flexible. Rely on tools that do one thing and do it well.
 - No vendor lock-in.
   - Rely on Open code, standards, and infrastructure.
-  - Use the tool you want to create, explore, and consume the datasets.
+  - Use the tool you want to create, explore, and consume the datasets. Agnostic of any tooling or infrastructure provider.
+  - Standard format for data and APIs!
 - Modular ecosystem. Rely on standards like Arrow for IPC, and Frictionless for metadata.
 - Distributed Permissionless ecosystem and collaboration. Open source code and make it ready to be improved.
+  - Data marketplace not linked to a specific company or platform.
 - Declarative and reproducible workflows and datasets. Everything as code.
 - Open and transparent governance and funding.
 - Community that incentives contributors.
