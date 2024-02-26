@@ -13,3 +13,9 @@ Let's explores how to do it using [Frictionless](https://frictionlessdata.io/) a
 ## 🚀 Quickstart
 
 Check out the [Quickstart Notebook](../notebooks/quickstart.ipynb) to see how to package any dataset online with existing tooling.
+
+## 🧑‍🦱 Interesting Folks
+
+- [Jed Sundwall](https://jed.co/)
+- [Nathan Snellaert](https://github.com/nathansnellaert)
+- [Rufus Pollock](https://rufuspollock.com/)
