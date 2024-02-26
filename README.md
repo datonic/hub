@@ -1,6 +1,6 @@
 # 📦 Datonic Hub
 
-The center of the Datonic community. 
+The center of the Datonic community.
 
 We aim to improve the way the world produces, share, consume and collaborate on open datasets.
 We aim for a world that produces **open data** with **open source software** using **open protocols** running on **open infrastructure**.
@@ -25,4 +25,4 @@ We aim for a world that produces **open data** with **open source software** usi
 - Community that incentives contributors.
 - Embrace inmutability and idempotency. Rely on content-addressable storage and append-only logs.
 - Aim for stateless and serverless deployments. E.g. use GitHub Pages, host datasets on S3.
-- Offline-first. Rely on static files and offline-first tools like [Datasette](https://datasette.io/). 
+- Offline-first. Rely on static files and offline-first tools like [Datasette](https://datasette.io/).
