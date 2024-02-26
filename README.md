@@ -20,7 +20,7 @@ These are some of the principles to keep in mind when thinking about Datonic pro
 - No vendor lock-in.
   - Rely on Open code, standards, and infrastructure.
   - Use the tool you want to create, explore, and consume the datasets. Agnostic of any tooling or infrastructure provider.
-  - Standard format for data and APIs! [Keep your data as future-friendly and future-proof as possible](https://indieweb.org/longevity)!
+  - Standard format for data and APIs! [Keep your data as future-friendly and future-proof as possible](https://indieweb.org/longevity)! E.g: [publish data as Parquet files on S3](https://www.robinlinacre.com/parquet_api/).
 - Modular ecosystem. Rely on standards like Arrow for IPC, and Frictionless for metadata.
 - Distributed Permissionless ecosystem and collaboration. Open source code and make it ready to be improved.
   - Data marketplace not linked to a specific company or platform.
@@ -30,5 +30,5 @@ These are some of the principles to keep in mind when thinking about Datonic pro
 - Embrace inmutability and idempotency. Rely on content-addressable storage and append-only logs.
 - Aim for stateless and serverless deployments. E.g. use GitHub Pages, host datasets on S3.
 - Offline-first. Rely on static files and offline-first tools like [Datasette](https://datasette.io/).
-- Aim for stateless and serverless deployments. E.g. use GitHub Pages, host datasets on S3. No servers to maintain, no databases to manage, no infrastructure to worry about.
+- Aim for stateless and serverless deployments. E.g. use GitHub Pages, host datasets on S3. No servers to maintain, no databases to manage, no infrastructure to worry about. Keep infrastructure management lean.
 - [Above all, have fun and ejoy the process](https://indieweb.org/principles). 🎉
