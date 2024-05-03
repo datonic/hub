@@ -1,2 +1,3 @@
 frictionless[parquet,pandas]
 ipykernel
+huggingface_hub

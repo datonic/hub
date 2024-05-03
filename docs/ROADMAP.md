@@ -1,25 +1,22 @@
 # ROADMAP
 
-## Overview
+## Goal
 
-Align the way we package data as an ecosystem.
+Create better ways to produce **open data** with **open source software** using **open protocols** running on **open infrastructure**.
 
 ## Milestones
 
 ### 0.1
 
-- [ ] Document how to backup datasets to IPFS
-- [ ] Create a Catalog of existing datasets
-- [ ] Make datasets retrievable via gateways
-- [ ] Make datasets retrievable via IPFS with `fsspec`
+- [ ] Create a sample repository for creating and sharing datasets
+- [ ] Make datasets easily retrievable
+- [ ] Make datasets discoverable
 - [ ] Early community reach out to look for potential datasets to package and collaborate on
 
 ### 0.2
 
-- [ ] Write HuggingFace plugin
-- [ ] Write Socrata plugin
-- [ ] Backup HuggingFace and Socrata datasets to IPFS/Filecoin
-- [ ] Integrate with other community projects like [OpSci Commons](https://commons.opsci.io/), [OpenNeuro](https://openneuro.org/), [OpenPanda](https://openpanda.io/).
+- [ ] Backup datasets to multiple locations
+- [ ] Automate dataset format conversion
 
 ### 0.3
 

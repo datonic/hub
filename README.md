@@ -1,9 +1,8 @@
 # 📦 Datonic Hub
 
-The center of the Datonic community.
+The center of the Datonic community. A place to improve the way the world produces, share, consume and collaborate on open datasets.
 
-We aim to improve the way the world produces, share, consume and collaborate on open datasets.
-We aim for a world that produces **open data** with **open source software** using **open protocols** running on **open infrastructure**.
+Aiming to share **open data** generated with **open source software** using **open protocols** running on **open infrastructure**.
 
 ## 📖 Documentation
 

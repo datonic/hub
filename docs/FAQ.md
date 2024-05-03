@@ -1,6 +1,6 @@
 # FAQ
 
-Please open an issue if you have any other question!
+[Open an issue](https://github.com/datonic/hub/issues/new) if you have questions!
 
 ## Why Frictionless?
 
@@ -16,7 +16,7 @@ We need to solve the problem of "packaging data" as a community. Frictionless is
 
 I've [tried quite a bunch of Data Package Managers](https://publish.obsidian.md/davidgasquez/Open+Data#Data+Package+Managers). Frictionless is the simplest and most flexible one. It also has a reasonable adoption and active community.
 
-That said, I'm open to other options. If you have a better idea, please open an issue and let's chat!
+That said, I'm open to other options. If you have a better idea, [let's chat](https://davidgasquez.com/)!
 
 ### How would you make datasets immutable?
 
@@ -31,7 +31,7 @@ resources:
     scheme: ipfs
 ```
 
-In the end, the Frictionless abstraction is just a URL. We can use anything we want in the backend as long as we provide a way to read the data. In this case:
+In the end, the Frictionless abstraction is just an URL. We can use anything we want in the backend as long as we provide a way to read the data. In this case:
 
 ```python
 ipfs_package = Package("my-dataset-datapackage.yaml") # Could even be Package("bafyreca4sf...")
@@ -45,7 +45,7 @@ ipfs_resource.sql("SELECT * FROM my-data")
 
 ### How would you backup datasets?
 
-An easy and cheap way to backup datasets is to preiodically backup the data resources on IPFS/Filecoin. This can be done using GitHub Actions and [Estuary](https://estuary.tech/)/[web3.storage](https://web3.storage/). Once the data in there, we can rely on the [`_cache` property of the Frictionless Specs](https://specs.frictionlessdata.io/patterns/#caching-of-resources) (or a `_backup` one) to point to the IPFS CID.
+Depending on the dataset, this feature could be pushed to the hosting later. If you publish in HuggingFace, you get versioning and backup for free! Once the data in there, we can rely on the [`_cache` property of the Frictionless Specs](https://specs.frictionlessdata.io/patterns/#caching-of-resources) (or a `_backup` one) to point to the previous backup.
 
 ### How would you make datasets discoverable?
 
@@ -89,7 +89,7 @@ Some interesting plugins ideas might be to integrate with Socrata ([Simon Wilson
 
 ### How would you make datasets reproducible?
 
-Need more thought but probably using something like Bacalhau to run the pipelines.
+By versioning the code and the data together, it should be possible to reproduce the dataset. The easiest way to do this is by publishing datasets via GitHub Actions, this way the code and the data are always in sync. Furthermore, attaching a Docker image and Dev Container environment makes it easy to reproduce the dataset in any environment.
 
 ### How would you make datasets versioned?
 
@@ -108,13 +108,9 @@ Yes, the new LLM models could help with this vision. A few things that could be 
 - Extract data and generate resources from anything. Define the schema and let GPT-N do the rest. [Some projects are already working on this](https://jamesturk.github.io/scrapeghost/).
 - Can datapackages be written in natural language? Can we use GPT-N to generate them? The same way [plugins are starting to be written for ChatGPT](https://raw.githubusercontent.com/openai/chatgpt-retrieval-plugin/336ff64b96ef23bda164ab94ca6f349607bbc5b6/.well-known/ai-plugin.json) that only requires a `description_for_model` text. Could something like this work on data packages. Embeddings become the flexible metadata we all want.
 
-### How does Frictionless Data compare to other data management or data packaging tools?
-
-TODO: Explain how the project fits into the larger open data ecosystem and how it relates to other similar projects.
-
 ### Can Frictionless be used for non-tabular data formats?
 
-TODO: Explain how the project can be used for non-tabular data formats and add examples.
+Yes! It is probably not the best fit but the basic idea would be to have a table pointing to the URI of the non-tabular data. For example, you could have a datasets of sounds, images, or videos by having a column with the URI of the file.
 
 ### Why should people use Frictionless Data?
 

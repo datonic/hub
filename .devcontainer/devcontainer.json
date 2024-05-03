@@ -1,7 +1,4 @@
 {
-    "name": "Datasets",
-    "build": {
-        "dockerfile": "../Dockerfile",
-        "context": ".."
-    }
+  "name": "Datonic Hub",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye"
 }
