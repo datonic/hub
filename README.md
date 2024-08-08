@@ -15,7 +15,7 @@ Aiming to share **open data** generated with **open source software** using **op
 These are some of the principles to keep in mind when thinking about Datonic projects.
 
 - [FAIR](https://www.go-fair.org/fair-principles/).
-- Minimal and flexible. Rely on tools that do one thing and do it well.
+- Minimal (KISS) and flexible. Rely on tools that do one thing and do it well.
 - No vendor lock-in.
   - Rely on Open code, standards, and infrastructure.
   - Use the tool you want to create, explore, and consume the datasets. Agnostic of any tooling or infrastructure provider.
@@ -31,3 +31,5 @@ These are some of the principles to keep in mind when thinking about Datonic pro
 - Offline-first. Rely on static files and offline-first tools like [Datasette](https://datasette.io/).
 - Aim for stateless and serverless deployments. E.g. use GitHub Pages, host datasets on S3. No servers to maintain, no databases to manage, no infrastructure to worry about. Keep infrastructure management lean.
 - [Above all, have fun and ejoy the process](https://indieweb.org/principles). 🎉
+- Reuse existing tools.
+- Experiment mindset. Encourage trying new things (tools, processes, frameworks, ...).
