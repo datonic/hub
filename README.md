@@ -2,7 +2,7 @@
 
 The center of the Datonic community. A place to improve the way the world produces, share, consume and collaborate on open datasets.
 
-Aiming to share **open data** generated with **open source software** using **open protocols** running on **open infrastructure**.
+Building better ways to produce **open data** with **open source software** using **open protocols** running on **open infrastructure**.
 
 ## 📖 Documentation
 
