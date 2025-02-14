@@ -4,10 +4,9 @@ The center of the Datonic community.
 
 Our goal is to improve coordination and shared understanding by exploring how the world produces **open data** with **open source software** using **open protocols** running on **open infrastructure**.
 
-## 📖 Documentation
-
-- [❓ FAQ](docs/FAQ.md)
-- [💭 Open Questions](docs/Open%20Questions.md)
+> [!NOTE]
+>
+> Check out all our [notes](notes/) to learn more about the project, including [frequently asked questions](notes/faq.md)!
 
 ## 📦 Projects
 
