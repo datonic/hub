@@ -39,12 +39,14 @@ These are some of the guiding principles we, as a community, should keep in mind
   - E.g: Datadex produces a dashboard and puts the data where people can find and use it.
 - Untap the potential of existing open data and modern tooling.
 - Offline-first. Rely on static files and offline-first tools like WASM or [Datasette](https://datasette.io/).
+- Openness is an attribute spectrum of the data products.
 
 ## 🤝 Collaboration
 
 - Non Profit / Cooperative / Community-owned financially self-sustainable.
 - Open and transparent governance and funding.
 - Win at the edge. Cheap and scalable data products for communities.
+  - Just because there is open data, doesn't mean people will use it. E.g: cities launched data portals and waited for startups to build dashboards and apps on top but not much happened. Focus instead on making data products that are useful for the community.
 - Lower the cost of producing new sustainable data products. E.g: Paying to publish datasets can limit spam and also signals the dataset quality.
 - Act local and start small. Focus on one community at a time and solve the problems great at that scale.
 - [More Data More Available to More People](https://radiant.earth/blog/2024/05/the-state-of-data-at-satsummit-2024/).
