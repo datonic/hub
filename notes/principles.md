@@ -1,0 +1,34 @@
+# Principles
+
+- **Easy**. Create, curate and [share](https://datamgmtinedresearch.com/share) datasets without friction.
+  - Frictionless: Data is useful only when used! Right now, we're not using most of humanity's datasets. That's not because they're not available but because they're hard to get. They're isolated in different places and multiple formats.
+  - Pragmatism: published data is better than almost published one because something is missing. Publishing datasets to the web is too hard now and there are few purpose-built tools that help.
+  - Familiar Workflow: [people won't change their workflow to use a new tool](https://xethub.com/blog/shutting-down-xethub-learnings-and-takeaways). They will use something if it fits into their existing workflow.
+- **Versioned and Modular**. Data and metadata (e.g: `relation`) should be [updated, forked and discussed](https://github.com/jbenet/data/blob/master/dev/designdoc.md#data-hashes-and-refs) as code in version controlled repositories.
+  - Prime composability (e.g: [Arrow ecosystem](https://thenewstack.io/how-apache-arrow-is-changing-the-big-data-ecosystem/)) so tools/services can be swapped.
+  - Metadata as a first-class citizen. Even if minimal and automated.
+  - Git based approach collaboration. Adopt and integrate with `git` and GitHub to reduce surface area. Build tooling to adapt revisions, tags, branches, issues, PRs to datasets.
+    - Portals are a GitHub repository with scripts to collect data from various sources, clean it, and join it, and publish useful datasets and artifacts for that community. Ideally, they are also simple to get started with and expose the best practices in data engineering for curating and transforming data.
+  - Provide a declarative way of defining the datasets schema and other meta-properties like _relations_ or _tests/checks_.
+  - Support for integrating non-dataset files. A dataset could be linked to code, visualizations, pipelines, models, reports, ...
+- **[Reproducible](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285) and Verifiable**. People should be able to trust the final datasets without having to recompute everything from scratch. In "reality", events are immutable, data should be too. [Make datasets the center of the tooling](https://dagster.io/blog/software-defined-assets).
+  - With immutability and content addressing, you can move backwards in time and run transformations or queries on how the dataset was at a certain point in time.
+  - [Datasets are books, not houses](https://medium.com/qri-io/datasets-are-books-not-houses-760bd4736229)!
+- **Permissionless**. Anyone should be able to add/update/fix datasets or their metadata. GitHub style collaboration, curation, and composability. On data.
+  - Mitigate barriers to entry. When datasets grow extremely large, the substantial requirements for infrastructure, storage, and processing create de facto barriers to entry. At the same tim, their value typically increases due to network effects - more data is better, but less people can afford to curate it.
+- **Aligned Incentives**. Curators should have incentives to improve datasets. Data is messy after all, but a good set of incentives could make great datasets surface and reward contributors accordingly (e.g: [number of contributors to Dune](https://github.com/duneanalytics/spellbook/commits/main)).
+  - [Bounties](http://web.archive.org/web/20230620160338/https://www.dolthub.com/bounties) could be created to reward people that adds useful but missing datasets.
+  - Surfacing and creating great datasets could be rewarded (retroactively or with bounties).
+  - Curating the data provides compounding benefits for the entire community!
+  - Rewarding the datasets creators according to the usefulness. E.g: [CommonCrawl built an amazing repository](https://commoncrawl.org/) that OpenAI has used for their GPTs LLMs. Not sure how well CommonCrawl was compensated.
+  - Governments needs to be forced to use their open data. This should create a feedback loop and have them improve the quality and freshness of the data. That forces to keep up on the quality and freshness.
+- **Open Source and [Decentralized](https://github.com/orgs/datonic/discussions/42)**. Datasets should be stored in multiple places.
+  - Don't create yet another standard. Provide a way for people to integrate current indexers. Work on _adapters_ for different datasets sources. Similar to:
+    - [Foreign Data Wrappers in PostgreSQL](https://wiki.postgresql.org/wiki/Foreign_data_wrappers)
+    - [Trustfall](https://github.com/obi1kenobi/trustfall).
+    - Open source data integration projects like [Airbyte](https://airbyte.com/). They can used to build open data connectors making possible to replicate something from `$RANDOM_SOURCE` (e.g: spreadsheets, Ethereum Blocks, URL, ...) to any destination.
+    - Adapters are created by the community so data becomes connected.
+    - Having better data will help create better and more accessible AI models ([people are working on this](https://github.com/togethercomputer/OpenDataHub)).
+  - Integrate with the modern data stack to avoid reinventing the wheel and increase surface of the required skill sets.
+  - Decentralized the computation (where data lives) and then cache immutable and static copies of the results (or aggregations) in CDNs (IPFS, R2, Torrent). Most end user queries require only reading a small amount of data!
+- [Other Principles from the Indie Web](https://indieweb.org/principles) like have fun!
