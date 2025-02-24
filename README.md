@@ -1,20 +1,18 @@
 # 📦 Datonic Hub
 
-The center of the Datonic community.
-
-Our goal is to improve coordination and shared understanding by exploring how the world produces **open data** with **open source software** using **open protocols** running on **open infrastructure**.
+A place to explore how to improve coordination and shared understanding of the world by producing **data products** using **open protocols** running on **open infrastructure**.
 
 > [!NOTE]
 >
-> Check out our documentation to learn more about the project, including [frequently asked questions](notes/faq.md)!
+> Check out the [documentation](notes/) to learn more about the project or [join one of the discussions](https://github.com/orgs/datonic/discussions)!
 
 ## 📦 Projects
 
-- [Datadex](https://github.com/datonic/datadex). An open-source, serverless, and local-first Data Platform that improves how communities collaborate on tabular (spreadsheet style) data. Ingest existing datasets and make them nicer for your community.
+- [Datadex](https://github.com/datonic/datadex). An open-source, serverless, and local-first Data Platform that improves how communities collaborate on tabular (spreadsheet style) data. Ingest, process, and publish datasets to make them useful for your community.
 
 ## 🌟 Principles
 
-These are some of the guiding principles we, as a community, should keep in mind.
+These are the guiding principles of Datonic.
 
 ### 🔄 Simplicity
 
