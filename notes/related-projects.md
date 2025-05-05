@@ -109,6 +109,14 @@
 - [The Linked Open Data Cloud](https://lod-cloud.net/)
 - [Organisation for Economic Co-operation and Development](https://www.oecd.org/en/data.html)
 
+## Data Archiving
+
+- [The Internet Archive](https://archive.org/)
+- [The Wayback Machine](https://web.archive.org/)
+- [Safeguarding Research & Culture (SRC)](https://forum.safeguar.de/about)
+- [Source.coop](https://source.coop/)
+- [SciOp](https://sciop.net/)
+
 ## Open Data Driven Projects
 
 - [Safemap](https://safemap.io/)
