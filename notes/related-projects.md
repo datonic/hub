@@ -31,6 +31,9 @@
 - [Juan Benet's data](https://github.com/jbenet/data)
 - [Colah's data](https://github.com/colah/data)
 - [Dolt](https://docs.dolthub.com/) is another interesting project in the space with some awesome data structures. They also [do data bounties](https://www.dolthub.com/repositories/dolthub/us-businesses)!
+- [Chakra](https://www.chakra.dev/)
+- [Portex](https://portexai.com/)
+- [Baselight](https://baselight.ai/)
 
 ## Computation
 
