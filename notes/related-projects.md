@@ -124,3 +124,4 @@
 
 - [Safemap](https://safemap.io/)
 - [Is it hot in Learmonth right now?](https://isithotrightnow.com/) (Australia) and [Hoy Extremo](https://hoyextremo.com/) (Spain)
+- [OpenTimes](https://github.com/dfsnow/opentimes)
