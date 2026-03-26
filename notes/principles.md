@@ -4,6 +4,12 @@
   - Frictionless: Data is useful only when used! Right now, we're not using most of humanity's datasets. That's not because they're not available but because they're hard to get. They're isolated in different places and multiple formats.
   - Pragmatism: published data is better than almost published one because something is missing. Publishing datasets to the web is too hard now and there are few purpose-built tools that help.
   - Familiar Workflow: [people won't change their workflow to use a new tool](https://xethub.com/blog/shutting-down-xethub-learnings-and-takeaways). They will use something if it fits into their existing workflow.
+  - Minimal (KISS) and flexible.
+    - Rely on tools that do one thing and do it well.
+    - Simplicity means datasets are just files (data, and metadata) on Object Storage!
+  - Aim for stateless and serverless deployments. E.g. use GitHub Pages, host datasets on S3. No servers to maintain, no databases to manage, no infrastructure to worry about. Keep infrastructure management lean. Dumb servers with self-verification.
+  - Opinionated about making data available using widely-adopted file formats and generic APIs in order to encourage interoperability, flexibility of usage, and ethical applications.
+  - Offline-first. Rely on static files and offline-first tools like WASM or [Datasette](https://datasette.io/).
 - **Versioned and Modular**. Data and metadata (e.g: `relation`) should be [updated, forked and discussed](https://github.com/jbenet/data/blob/master/dev/designdoc.md#data-hashes-and-refs) as code in version controlled repositories.
   - Prime composability (e.g: [Arrow ecosystem](https://thenewstack.io/how-apache-arrow-is-changing-the-big-data-ecosystem/)) so tools/services can be swapped.
   - Metadata as a first-class citizen. Even if minimal and automated.
@@ -11,17 +17,33 @@
     - Portals are a GitHub repository with scripts to collect data from various sources, clean it, and join it, and publish useful datasets and artifacts for that community. Ideally, they are also simple to get started with and expose the best practices in data engineering for curating and transforming data.
   - Provide a declarative way of defining the datasets schema and other meta-properties like _relations_ or _tests/checks_.
   - Support for integrating non-dataset files. A dataset could be linked to code, visualizations, pipelines, models, reports, ...
+  - Modular ecosystem. Rely on standards like Arrow for IPC, and Frictionless for metadata.
+  - Declarative and reproducible workflows and datasets. Everything as code.
+  - Reuse existing tools.
+  - Build tools to make using the right standard (on your community), the easiest and best option. Don't aim for an universal Standard or Protocol.
 - **[Reproducible](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285) and Verifiable**. People should be able to trust the final datasets without having to recompute everything from scratch. In "reality", events are immutable, data should be too. [Make datasets the center of the tooling](https://dagster.io/blog/software-defined-assets).
   - With immutability and content addressing, you can move backwards in time and run transformations or queries on how the dataset was at a certain point in time.
   - [Datasets are books, not houses](https://medium.com/qri-io/datasets-are-books-not-houses-760bd4736229)!
+  - Embrace inmutability and idempotency. Rely on content-addressable storage and append-only logs.
+  - [FAIR](https://www.go-fair.org/fair-principles/).
 - **Permissionless**. Anyone should be able to add/update/fix datasets or their metadata. GitHub style collaboration, curation, and composability. On data.
   - Mitigate barriers to entry. When datasets grow extremely large, the substantial requirements for infrastructure, storage, and processing create de facto barriers to entry. At the same tim, their value typically increases due to network effects - more data is better, but less people can afford to curate it.
+  - No vendor lock-in.
+    - Rely on Open code, standards, and infrastructure.
+    - Use the tool you want to create, explore, and consume the datasets. Agnostic of any tooling or infrastructure provider.
+    - Standard format for data and APIs! [Keep your data as future-friendly and future-proof as possible](https://indieweb.org/longevity)! E.g: [publish data as Parquet files on S3](https://www.robinlinacre.com/parquet_api/).
+  - Data Sovereignty. Data is yours, open standards, locally runnable, reproducible.
+  - Distributed Permissionless ecosystem and collaboration. Open source code and make it ready to be improved.
+    - Data marketplace not linked to a specific company or platform.
 - **Aligned Incentives**. Curators should have incentives to improve datasets. Data is messy after all, but a good set of incentives could make great datasets surface and reward contributors accordingly (e.g: [number of contributors to Dune](https://github.com/duneanalytics/spellbook/commits/main)).
   - [Bounties](http://web.archive.org/web/20230620160338/https://www.dolthub.com/bounties) could be created to reward people that adds useful but missing datasets.
   - Surfacing and creating great datasets could be rewarded (retroactively or with bounties).
   - Curating the data provides compounding benefits for the entire community!
   - Rewarding the datasets creators according to the usefulness. E.g: [CommonCrawl built an amazing repository](https://commoncrawl.org/) that OpenAI has used for their GPTs LLMs. Not sure how well CommonCrawl was compensated.
   - Governments needs to be forced to use their open data. This should create a feedback loop and have them improve the quality and freshness of the data. That forces to keep up on the quality and freshness.
+  - Lower the cost of producing new sustainable data products. E.g: Paying to publish datasets can limit spam and also signals the dataset quality.
+  - Non Profit / Cooperative / Community-owned financially self-sustainable.
+  - Open and transparent governance and funding.
 - **Open Source and [Decentralized](https://github.com/orgs/datonic/discussions/42)**. Datasets should be stored in multiple places.
   - Don't create yet another standard. Provide a way for people to integrate current indexers. Work on _adapters_ for different datasets sources. Similar to:
     - [Foreign Data Wrappers in PostgreSQL](https://wiki.postgresql.org/wiki/Foreign_data_wrappers)
@@ -31,4 +53,16 @@
     - Having better data will help create better and more accessible AI models ([people are working on this](https://github.com/togethercomputer/OpenDataHub)).
   - Integrate with the modern data stack to avoid reinventing the wheel and increase surface of the required skill sets.
   - Decentralized the computation (where data lives) and then cache immutable and static copies of the results (or aggregations) in CDNs (IPFS, R2, Torrent). Most end user queries require only reading a small amount of data!
+  - Focus on Data Products and not just datasets.
+    - E.g: Datadex produces a dashboard and puts the data where people can find and use it.
+  - Untap the potential of existing open data and modern tooling.
+  - Openness is an attribute spectrum of the data products.
+- **Collaboration**.
+  - Win at the edge. Cheap and scalable data products for communities.
+    - Just because there is open data, doesn't mean people will use it. E.g: cities launched data portals and waited for startups to build dashboards and apps on top but not much happened. Focus instead on making data products that are useful for the community.
+  - Act local and start small. Focus on one community at a time and solve the problems great at that scale.
+  - [More Data More Available to More People](https://radiant.earth/blog/2024/05/the-state-of-data-at-satsummit-2024/).
+  - Experiment mindset. Encourage trying new things (tools, processes, frameworks, ...).
 - [Other Principles from the Indie Web](https://indieweb.org/principles) like have fun!
+  - [Above all, have fun and enjoy the process](https://indieweb.org/principles).
+  - Tech is people. Don't focus on making numbers go up.
